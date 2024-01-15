@@ -57,3 +57,7 @@ select coalesce(null, 'macaco');
 select concat(nome, ' - ', coalesce(telefone, 'Campo vazio')) from usuarios;
 
 select idade, count(id) from usuarios	group by idade;
+
+select * from farmacia;
+
+select categoria, count(id), sum(estoque) from farmacia group by categoria;
