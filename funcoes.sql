@@ -60,4 +60,4 @@ select idade, count(id) from usuarios	group by idade;
 
 select * from farmacia;
 
-select categoria, count(id), sum(estoque) from farmacia group by categoria;
+select categoria, count(id) as "Quantidade de Produtos", sum(estoque) as "Soma total do Estoque" from farmacia group by categoria;
